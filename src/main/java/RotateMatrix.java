@@ -8,6 +8,7 @@ public class RotateMatrix {
     }
 
     private int[][] rotateMatrix(int[][] array) {
+        // reverse the size, if quadratic everything stays the same, if rectangle it is now wider/higher
         int height = array[0].length;
         int width = array.length;
 
@@ -41,8 +42,11 @@ public class RotateMatrix {
     }
 
     public static void main(String[] args) {
+        // Set the height and width of the matrix
         int width = 3;
-        int height = 3;
+        int height = 2;
+
+        // Init the array
         int[][] array = new int[height][width];
         int counter = 1;
         for (int i = 0; i < height; i++) {
