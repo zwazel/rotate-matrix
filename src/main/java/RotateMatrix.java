@@ -41,8 +41,8 @@ public class RotateMatrix {
     }
 
     public static void main(String[] args) {
-        int width = 3;
-        int height = 2;
+        int width = 2;
+        int height = 3;
         int[][] array = new int[height][width];
         int counter = 1;
         for (int i = 0; i < height; i++) {
